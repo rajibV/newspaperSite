@@ -1,0 +1,355 @@
+/*------------------For any height , weidth---------------*/
+$height:150px;
+$weidth:100%;
+
+
+$heigt-800:800px;
+$height-300:300px;
+
+/*---------------All Background color variable--------*/
+
+$bg-red:red;
+$bg-gray:gray;
+$bg-white:#fff;
+$bg-black:rgba(0, 0, 0, 0.67);
+
+/*--------------All font color variable--------------*/
+$font-white:#fff;
+$font-black:rgba(0, 0, 0, 0.54);
+$font-gray:gray;
+$font-red:red;
+
+/*--------------All font weight var-----------------*/
+$font-weight600:600;
+$font-weight700:700;
+$font-weight500:500;
+
+/*--------------All section Mixin-------------------*/
+%section{
+    height:$heigt-800 ;
+    width: 100%;
+    background: $bg-white;
+    color: $font-black;
+}
+
+
+body{
+    /*padding: 0;
+    margin: 0;*/
+    background-color:#f2f6fa;
+    background-size: cover;
+    
+}
+
+/*---------------------------------*/
+.simple-slider{
+    height: $height;
+    width:$weidth;
+    background:$bg-white; 
+}
+.main-menu{
+    background: #EFEAD2;
+    
+}
+.logo{
+    float: left;
+    padding-top: 10px;
+}
+.right-menu{
+    float: right;
+    background: #EFEAD2;
+}
+
+/*---------------------------------*/
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+    
+    li{
+        display: inline-block;
+        float: left;
+       
+            
+        a{
+            text-decoration: none;
+            padding: 29px 12px 30px;
+            color: black;
+            font-weight: 400;
+            display: block;
+            
+           &:hover{
+                background: $bg-white;
+                color: $font-red;
+               text-decoration: none;
+            }
+        }
+    }
+
+}
+
+/*ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}*/
+
+/*ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    
+    
+}
+ul li{
+    float: left;
+    background:  black;
+    color: white;
+    opacity: .6;
+    line-height: 40px;
+    width: 200px;
+    text-align: center;
+    
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    
+}
+ul li a:hover{
+    color: red;
+    background: white;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+    
+    
+}
+ul li:hover ul li{
+    display: inline-block;
+    
+}*/
+
+
+
+
+/*-----------Paper img style-------*/
+
+/*---------------------------------*/
+
+
+.newspapersSec1{
+    @extend %section;
+    height: 980px;
+    padding: 5px 5px 5px 5px;
+    
+}
+.head-tittle{
+    text-align: center;
+    background: $bg-gray;
+    
+}
+
+.head-tittle a{
+    color: $font-white;
+    text-transform: uppercase;
+}
+.news-area-header{
+    background: $bg-white;
+}
+.news-area-header a{
+    color: $font-black;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.papers{
+    padding: 5px 5px 5px 5px;
+    border: 1px solid black;
+    display: inline-block;
+    align-content: center;
+    
+}
+.papers:hover{
+    color: red;
+    font: bold;
+}
+.paper-img{
+    height: 40px;
+    width: 200px;
+}
+.newspapersEng{
+    @extend %section;
+    height: 400px;
+    padding: 5px 5px 5px 5px;
+    
+}
+.english-paper-emergency{
+    height: 400px;
+    background: $bg-gray;
+}
+
+
+
+.newspaperss{
+    @extend %section;
+     height: 980px;
+    background:$bg-gray; 
+}
+.newspaperss li{
+    padding-left: 20px;
+}
+
+.most-important-header{
+    
+    text-align: center;
+    background: $bg-white;
+}
+.most-important-header a{
+    color: $font-black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+.newspapersPortal{
+    @extend %section;
+    height: 1700px;
+}
+.newsportal-important{
+    height: 1700px;
+    background: $bg-gray;
+}
+
+
+
+
+/*---------------------------*/
+.magazin{
+    @extend %section;
+    height: $height-300;
+}
+.important-magazine{
+    height: $height-300;
+    background: $bg-gray;
+}
+
+/*------------------------Radio----*/
+.online-radio{
+    @extend %section;
+    height: 550px;
+}
+.radio-emergency{
+    background: black;
+    height: 550px;
+}
+
+/*---------------------TV---------------*/
+.tv-news{
+    @extend %section;
+    height: 650px;
+}
+.tv-emergency{
+    @extend %section;
+    background: gray;
+    height: 650px;
+}
+
+/*--------Indian bangla all news-------------*/
+
+.ind-bangla-news{
+    @extend %section;
+    height: 880px;
+}
+.indian-emergency{
+    @extend %section;
+    background: $bg-gray;
+    height: 880px;
+}
+/*---------Local district ---------*/
+.local-dist-allNews{
+    @extend %section;
+    height: 1070px;
+}
+.local-dist-allNews .paper-img{
+    height: 65px;
+    width: 200px;
+    
+}
+.local-dist-allNews .papers{
+   padding: 5px 5px 5px 5px;
+}
+.local-dist-emergency{
+     @extend %section;
+     background: $bg-black;
+     height: 1070px;
+}
+
+/*----------World news--------*/
+
+.all-world-news{
+    @extend %section;
+    background: $bg-white;
+    height: 850px;
+}
+.all-world-news .paper-img{
+    height: 65px;
+    width: 200px;
+}
+.all-world-news .papers{
+    padding: 5px 5px 5px 5px;
+}
+
+.all-world-emergency{
+    @extend %section;
+    background: gray;
+    height: 850px;
+}
+
+/*-----------------Technology News------------*/
+
+.techno-all-news{
+    @extend %section;
+    height: 350px;
+}
+.techno-all-news .paper-img{
+    height: 65px;
+    width: 200px;
+}
+.techno-all-news .papers{
+    padding: 5px 5px 5px 5px;
+}
+.technology-emergency{
+    @extend %section;
+    background: gray;
+    height: 350px;
+}
+/*----------------------Footer-------------*/
+
+
+
+/*----------------------iframe----html-------*/
+
+footer{
+    height: 250px;
+    width: 100%;
+    background: $bg-black;
+}
+
+.footer-text-left{
+    padding-top: 20px;
+}
+.footer-text-right{
+    padding-top: 15px;
+}
+.footer-text-right a{
+    padding: 10px;
+    font-size: 17px;
+    color:#fff;
+}

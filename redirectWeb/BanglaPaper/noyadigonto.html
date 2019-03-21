@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>iframme::newspaper</title>
+    <style>
+      #iframe::-webkit-scrollbar { 
+          display: none; 
+      }
+      #iframe{
+        width: 100%;
+        height: 100vh;
+
+      }
+      html {
+      overflow: scroll;
+      overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+     width: 0px; remove scrollbar space /
+     background: transparent; / optional: just make scrollbar invisible /
+     }
+    </style>
+  </head>
+  <body>
+        <section class="menu-area main-menu">
+        <div class="container ">
+            <div class="row ">
+              <div class="col-md-12">
+                 <div class="">
+                  <div class="logo">
+                      <a href="https://www.thedailycampus.com/">
+                          <img src="img/daily_campus.png" height="40">
+                      </a>
+                  </div>
+                   <div class="right-menu">
+                       <ul>
+                           <li><a href="#">প্রচ্ছদ</a></li>
+                           <li><a href="#">বইমেলা</a></li>
+                           <li><a href="#">উচ্চ শিক্ষা</a>
+                               <!--<ul class="submenu">
+                                   <li><a href="#">ঢাকা বিশ্ববিদ্যালয়</a></li>
+                                   <li><a href="#">স্বায়ত্বশাসিত সরকারি</a></li>
+                                   <li><a href="#">বেসরকারি বিশ্ববিদ্যালয়</a></li>
+                                   <li><a href="#">মেডিকেল</a></li>
+                               </ul>-->
+                           </li>
+                           <li><a href="#">শিক্ষা ধারা</a></li>
+                           <li><a href="#">উদ্ভাবন</a></li>
+                           <li><a href="#">শুকুমার বিত্তি</a></li>
+                           <li><a href="#">স্ক্লারশিপতি</a></li>
+                           <li><a href="#">পরিক্ষা ও ফলাফলতি</a></li>
+                           <li><a href="#">কর্মসংস্থানি</a></li>
+                       </ul>
+                   </div>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-area-lft-first">
+      <!-- <div class="container-fluid"> -->
+        <iframe id="iframe" src="http://www.dailynayadiganta.com/" width="100%" height="100vh" frameborder="0" style="overflow: scroll;" scrolling="none"></iframe>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+  </body>
+</html>
